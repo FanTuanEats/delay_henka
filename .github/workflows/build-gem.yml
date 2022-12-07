@@ -1,0 +1,15 @@
+name: Gem Build and Publish
+on:
+  push:
+    paths-ignore:
+      - terraform/**
+
+jobs:
+  build-workflow:
+    uses: FanTuanEats/infra-template/.github/workflows/gem-publish.yml@main
+    with:
+      ruby_version: 3.1.2
+      rubygems_version: 3.3.22
+      test_command: bundle exec rspec
+      main_branch: master
+    secrets: inherit
