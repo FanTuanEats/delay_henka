@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## Version 0.8.0
+
+** Breaking changes:**
+
+* Drop the deault value of keywords arg schedule_at for .schedule method
+* Drop the constraint on schedule job running time
+
 ## Version 0.7.2
 
 * Change Keka dependency to usе less strict version
